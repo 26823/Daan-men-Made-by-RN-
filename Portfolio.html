@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact - Daan Men</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">Daan Men!</div>
+
+    <ul class="nav-links">
+      <li><a href="index1.html">Home</a></li>
+      <li><a href="Portfolio.html">
+question</a></li>
+      <li><a href="About.html">About</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- EMAIL FORMULIER -->
+  <div class="email-box">
+
+    <h1>Contact</h1>
+    <p>Stuur mij een bericht!</p>
+
+    <form id="contact-form">
+
+      <label for="name"></label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Je naam"
+        required
+      >
+
+      <label for="email">E-mail</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="jouw@email.nl"
+        required
+      >
+
+      <label for="title">Titel</label>
+      <input
+        type="text"
+        id="title"
+        name="title"
+        placeholder="Waar gaat je bericht over?"
+        required
+      >
+
+      <label for="comment">Commentaar</label>
+      <textarea
+        id="comment"
+        name="comment"
+        placeholder="Schrijf hier je bericht..."
+        required
+      ></textarea>
+
+      <button type="submit">📨 Versturen</button>
+
+      <p id="status"></p>
+
+    </form>
+
+  </div>
+
+
+  <!-- EMAILJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- JOUW SCRIPT -->
+  <script src="script2.js"></script>
+
+</body>
+</html>
